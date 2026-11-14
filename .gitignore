@@ -16,3 +16,4 @@ data/raw/
 # private judging context (never commit)
 .judge/
 .pytest_cache/
+EXPLANATION.md
