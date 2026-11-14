@@ -183,6 +183,10 @@ Third-party data keeps its own licence. The MIT licence covers the code. Details
 
 BillProof drafts an administrative check of a document. It is not medical advice and not legal advice. A person signs every dispute and every appeal.
 
+## Team
+
+Aldridge Fonseca and Gitika Rath.
+
 ## License
 
-Code: [MIT](LICENSE), copyright 2026 Aldridge Fonseca.
+Code: [MIT](LICENSE), copyright 2026 Aldridge Fonseca and Gitika Rath.

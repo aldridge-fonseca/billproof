@@ -5,6 +5,8 @@ type: software
 authors:
   - given-names: Aldridge
     family-names: Fonseca
+  - given-names: Gitika
+    family-names: Rath
 year: 2026
 license: MIT
 references:
