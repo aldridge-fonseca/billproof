@@ -1,6 +1,5 @@
 /* Trust dial component (js/dial.js). Self-contained: only theme.css tokens. */
 
-.tdial-card { margin-bottom: 1.25rem; padding: 1.6rem 1.8rem 1.2rem; }
 .tdial-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 2.6rem; align-items: stretch; }
 .tdial-left { display: flex; flex-direction: column; gap: 1.6rem; justify-content: center; min-width: 0; }
 

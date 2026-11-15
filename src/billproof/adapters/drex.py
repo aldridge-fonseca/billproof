@@ -1,6 +1,6 @@
 """Drex adapter: real hosted client (POST /v1/systemone) + seeded simulator.
 
-Wire format (research/raw/R1 + D1): one POST sends {model, state, questions}
+Wire format: one POST sends {model, state, questions}
 with all of a case's typed questions in a single call; the response carries a
 probability distribution per question (noul -> P(yes); choice -> per label;
 score -> per level index + legend), usage tokens, and the served model id.

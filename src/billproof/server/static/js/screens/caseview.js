@@ -1,6 +1,6 @@
 // Shared pieces for one prior-auth request (Read / Decide / Act): loading, criterion numbering,
 // the document viewer with evidence boxes, and the case header.
-import { h, icon, nace, screenHeader, decisionPill, bbox, fill, empty, CRITERION } from "../ui.js";
+import { h, icon, nace, screenHeader, decisionPill, bbox, fill, empty } from "../ui.js";
 import { api } from "../data.js";
 
 const TONE = { met: "green", unmet: "red", missing: "amber", not_applicable: "neutral" };
@@ -99,5 +99,4 @@ export function packetBoxes(c, { decided, deciding }) {
   }));
 }
 
-export function stateLabel(state) { return CRITERION[state]?.label || state; }
 export { decisionPill, nace, fill };

@@ -8,7 +8,6 @@ export const PRETTY = {
   "openai/gpt-6.1-sol": "GPT-6.1 Sol", "BillProof system: code + Drex": "BillProof system",
 };
 export const prettyModel = (name) => PRETTY[name] || String(name).split("/").pop();
-export const modelKind = (name) => (/billproof|system/i.test(name) ? "system" : /^drex/i.test(name) ? "drex" : /gpt-6\.1-sol/i.test(name) ? "gpt" : "other");
 
 export const LADDER_STYLE = {
   drex: { bg: "#4f46e5", border: "#4f46e5", w: 0, r: 8 },

@@ -77,7 +77,7 @@ Each external service has one interface and two implementations. `MOCK_MODE=auto
 - **Drex.** `POST {NACE_BASE_URL}/v1/systemone` with the model, the state, and the questions. Cost is input tokens times `DREX_PRICE_PER_MTOK`.
 - **NDI.** `POST /v1/documents/{split,extract,ground}`, then poll the job. Citations are page regions. Crops are cached because the preview URLs expire.
 - **Frontier and DeepInfra.** An OpenAI-compatible chat completion. The provider and model come from the environment, so the same adapter scores GPT-6.1 Sol and the DeepInfra models. Frontier confidence in the tables is self-reported. Drex confidence is the native probability.
-- **Replay.** `adapters/replay.py` serves a recorded JSONL row. The UI badge says replay.
+- **Replay.** `server/race.py` streams recorded JSONL rows from `data/runs/`. The UI badge says replay.
 - **Simulator.** `adapters/simulate.py` is seeded from labels. A simulated accuracy is an input to the simulator. It is not a measurement of a model. The published tables are not simulator output.
 
 ## Modules

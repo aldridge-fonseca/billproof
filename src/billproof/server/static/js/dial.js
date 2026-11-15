@@ -1,7 +1,7 @@
 // Trust dial: "send decisions Drex is less than X% sure about to GPT-6.1 Sol". Data from GET /api/results/{bench}/dial
 // (a curve over thresholds, simulated from recorded answers) plus fixed references (GPT only, Drex only) and the
 // measured hybrid run. Never hard-codes numbers: until the endpoint answers, a pending state is shown.
-// API: mountDial(el, bench, opts) · routedAt(bench, t) · dialCard(bench, opts) · fetchDial · dialState · normDial.
+// API: mountDial(el, bench, opts) · routedAt(bench, t) · fetchDial · dialState · normDial.
 import { h, icon, fmt, fill, diBadge } from "./ui.js";
 import { api, state } from "./data.js";
 import { metricName } from "./resultsdata.js";
@@ -149,13 +149,6 @@ export function mountDial(el, bench, { metricHint, compact = false, onChange } =
     setT(t) { root.dispatchEvent(new CustomEvent("tdial:set", { detail: t })); },
     destroy() { alive = false; clearTimeout(retry); chart?.destroy(); },
   };
-}
-
-// Card wrapper used by the screens (Results hub, benchmark detail).
-export function dialCard(bench, opts = {}) {
-  const card = h("div", { class: "card tdial-card" });
-  mountDial(card, bench, opts);
-  return card;
 }
 
 function header(bench, tNode, range) {

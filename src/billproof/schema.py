@@ -35,7 +35,7 @@ class Action(StrEnum):
 
 
 class DenialCategory(StrEnum):
-    """CARC families (see research/raw/MED-D-rules-design.md)."""
+    """CARC families."""
 
     MEDICAL_NECESSITY = "MEDICAL_NECESSITY"
     PRIOR_AUTH = "PRIOR_AUTH"

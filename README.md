@@ -1,5 +1,7 @@
 # BillProof — Drexathon 2026, Track 1, Apex Predator: Drex vs. the Giants
 
+**Status: archived.** This was an entry for Drexathon 2026 (Nace AI), finished 2026-11-14. The repository is archived and is not developed further. The results below are the recorded runs from that build.
+
 The yes/no judgment in a bill audit, a prior-authorization checklist, or an appeal is usually given to a frontier model. Here those questions go to Drex, dollars and published rules stay in code, and the result is measured against Qwen3.8-Max on DeepInfra. Track 1 asks whether Drex can take those frontier-model decisions and be faster, cheaper, or more accurate. The lines below are that comparison against Qwen3.8-Max on DeepInfra.
 
 - Prior authorization: 100.0% vs Qwen3.8-Max 95.7%, 60× cheaper per 1,000 cases, 17× faster at the median.
